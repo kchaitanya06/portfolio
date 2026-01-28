@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
   <!-- GSAP -->
   <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
@@ -25,15 +25,11 @@
   </nav>
 </header>
 
-<!-- ================= HERO (TEXT ONLY) ================= -->
-<section class="hero hero-text">
+<!-- ================= HERO ================= -->
+<section class="hero">
   <div class="hero-content">
-    <h1>
-      Hi, I'm <span class="highlight">Chaitanya</span>
-    </h1>
-
+    <h1>Hi, I'm <span class="highlight">Chaitanya</span></h1>
     <h2 class="role">UI / Frontend Developer</h2>
-
     <p class="intro">
       I create clean, responsive, and interactive user interfaces for the web.
     </p>
@@ -47,21 +43,40 @@
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section id="about" class="about">
-  <img src="Images/223T1A0565.jpeg" class="about-img" alt="Profile photo">
+<section id="about" class="about-section">
+  <h2 class="about-title">About Me</h2>
 
-  <div>
-    <h2>About Me</h2>
-    <p>
-      I’m a frontend enthusiast who enjoys building visually appealing,
-      interactive websites with smooth animations and clean UI.
-    </p>
+  <p class="about-intro">
+    👋 I’m a <strong>Frontend Developer</strong> focused on building
+    <strong>clean, user-friendly, and visually engaging</strong> web interfaces.
+  </p>
 
-    <ul class="facts">
-      <li>💻 Frontend Intern</li>
-      <li>🎨 UI & Motion Design</li>
-      <li>🌍 India</li>
-    </ul>
+  <div class="about-cards">
+    <div class="about-card">
+      <h3>🎓 Education</h3>
+      <p>
+        Computer Science undergraduate with hands-on experience in
+        <span>Java, Data Structures, ServiceNow,</span> and
+        <span>Web Development</span>.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>🏆 Achievement</h3>
+      <p>
+        Selected among the <span>Top 100 students across India</span> for the
+        <span>ServiceNow CSA & CAD Cohort Program</span>.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>🚀 Strengths</h3>
+      <p>
+        Strong <span>problem-solving skills</span> with a passion for learning
+        <span>enterprise platforms, automation,</span> and
+        <span>emerging technologies</span>.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -70,17 +85,18 @@
   <h2>Gallery</h2>
 
   <div class="grid">
-    <img src="Images/deloite.jpeg" alt="Deloitte">
-    <img src="Images/infosysy.jpeg" alt="Infosys">
-    <img src="Images/intern.jpeg" alt="Internship">
+    <img src="Images/deloite.jpeg" alt="Deloitte" />
+    <img src="Images/infosysy.jpeg" alt="Infosys" />
+    <img src="Images/intern.jpeg" alt="Internship" />
   </div>
 </section>
 
 <!-- ================= LIGHTBOX ================= -->
 <div class="lightbox">
-  <img>
+  <img />
 </div>
-  
+
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="contact">
   <h2>Contact</h2>
 
@@ -108,12 +124,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
