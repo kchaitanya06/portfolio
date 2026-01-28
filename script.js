@@ -1,32 +1,47 @@
-gsap.registerPlugin(ScrollTrigger);
-
-/* Section animations */
-gsap.utils.toArray("section").forEach(section => {
-  gsap.from(section.children, {
-    scrollTrigger: {
-      trigger: section,
-      start: "top 80%"
-    },
-    y: 40,
-    opacity: 0,
-    stagger: 0.15,
-    duration: 1,
-    ease: "power3.out"
+// ===== Smooth Scroll for Navbar Links =====
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
   });
 });
 
-/* Gallery Lightbox */
-const images = document.querySelectorAll(".grid img");
-const lightbox = document.querySelector(".lightbox");
-const lightboxImg = lightbox.querySelector("img");
 
-images.forEach(img => {
-  img.onclick = () => {
-    lightboxImg.src = img.src;
-    gsap.to(lightbox, { opacity: 1, pointerEvents: "auto", duration: 0.3 });
-  };
+// ===== Simple Scroll Reveal Animation =====
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15
+  }
+);
+
+// Observe all sections
+document.querySelectorAll(".section").forEach(section => {
+  section.classList.add("hidden");
+  observer.observe(section);
 });
 
-lightbox.onclick = () => {
-  gsap.to(lightbox, { opacity: 0, pointerEvents: "none", duration: 0.3 });
-};
+
+// ===== Resume Button Hover Effect (optional polish) =====
+const resumeBtn = document.querySelector(".btn");
+if (resumeBtn) {
+  resumeBtn.addEventListener("mouseenter", () => {
+    resumeBtn.style.transform = "scale(1.05)";
+  });
+
+  resumeBtn.addEventListener("mouseleave", () => {
+    resumeBtn.style.transform = "scale(1)";
+  });
+}
