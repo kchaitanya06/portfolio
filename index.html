@@ -2,125 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kamalapuram Chaitanya | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- GSAP -->
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <h2 class="logo">Chaitanya</h2>
   <nav>
-    <h2 class="logo">Chaitanya</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===== HERO ===== -->
 <section class="hero">
-  <div class="hero-content">
-    <h1>Hi, I'm <span class="highlight">Chaitanya</span></h1>
-    <h2 class="role">UI / Frontend Developer</h2>
-    <p class="intro">
-      I create clean, responsive, and interactive user interfaces for the web.
+  <h1>Kamalapuram Chaitanya</h1>
+  <p>Computer Science Undergraduate | Aspiring Software Engineer</p>
+  <a href="KAMALAPURAM CHAITANYA.pdf" class="btn" download>📄 View Resume</a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+
+  <div class="about-box">
+    <p>
+      I am a <strong>Computer Science undergraduate</strong> with strong skills in
+      <strong>Java, Python, React, and Flask</strong>.
+      I have hands-on experience in <strong>full-stack development</strong> and
+      <strong>chatbot creation</strong>, and I enjoy building clean, responsive web
+      applications. I am eager to learn continuously and contribute to innovative
+      software engineering projects as a fresher.
     </p>
 
-    <div class="skills">
-      <span>💻 HTML, CSS, JavaScript</span>
-      <span>🎨 UI Design</span>
-      <span>🌱 Learning React</span>
+    <div class="chips">
+      <span>🎓 B.Tech CSE (CGPA: 8.2)</span>
+      <span>📍 Kurnool, Andhra Pradesh</span>
+      <span>🗣 English, Telugu, Hindi</span>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about-section">
-  <h2 class="about-title">About Me</h2>
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
 
-  <p class="about-intro">
-    👋 I’m a <strong>Frontend Developer</strong> focused on building
-    <strong>clean, user-friendly, and visually engaging</strong> web interfaces.
-  </p>
+  <div class="skills-grid">
+    <div class="skill">Java</div>
+    <div class="skill">Python</div>
+    <div class="skill">C</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">Flask</div>
+    <div class="skill">Git</div>
+    <div class="skill">VS Code</div>
+    <div class="skill">DSA</div>
+    <div class="skill">OOPs</div>
+    <div class="skill">DBMS</div>
+    <div class="skill">Operating Systems</div>
+  </div>
+</section>
 
-  <div class="about-cards">
-    <div class="about-card">
-      <h3>🎓 Education</h3>
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>E-Commerce Portfolio Platform</h3>
       <p>
-        Computer Science undergraduate with hands-on experience in
-        <span>Java, Data Structures, ServiceNow,</span> and
-        <span>Web Development</span>.
+        Built a responsive e-commerce application using <strong>React</strong> and
+        <strong>Node.js</strong> for dynamic product listings and improved user
+        experience.
       </p>
+      <div class="tags">
+        <span>React</span><span>Node.js</span><span>HTML</span><span>CSS</span>
+      </div>
     </div>
 
-    <div class="about-card">
-      <h3>🏆 Achievement</h3>
+    <div class="card">
+      <h3>AI Chatbot with Flask</h3>
       <p>
-        Selected among the <span>Top 100 students across India</span> for the
-        <span>ServiceNow CSA & CAD Cohort Program</span>.
+        Developed an AI chatbot using <strong>Flask</strong> and <strong>Python</strong>
+        with real-time interaction through <strong>AJAX</strong>. Implemented NLP logic
+        to handle user queries and designed the frontend using HTML and CSS.
       </p>
+      <div class="tags">
+        <span>Python</span><span>Flask</span><span>AJAX</span>
+      </div>
     </div>
 
-    <div class="about-card">
-      <h3>🚀 Strengths</h3>
+    <div class="card">
+      <h3>Cybersecurity Workshop</h3>
       <p>
-        Strong <span>problem-solving skills</span> with a passion for learning
-        <span>enterprise platforms, automation,</span> and
-        <span>emerging technologies</span>.
+        Led a campus cybersecurity workshop on phishing awareness and safe browsing
+        practices, successfully training <strong>100+ students</strong>.
       </p>
+      <div class="tags">
+        <span>Cybersecurity</span><span>Awareness</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= GALLERY ================= -->
-<section id="gallery" class="gallery">
-  <h2>Gallery</h2>
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications" class="section">
+  <h2>Certifications</h2>
 
-  <div class="grid">
-    <img src="Images/deloite.jpeg" alt="Deloitte" />
-    <img src="Images/infosysy.jpeg" alt="Infosys" />
-    <img src="Images/intern.jpeg" alt="Internship" />
+  <div class="card-grid">
+    <div class="card">
+      <h3>AWS Cloud Computing</h3>
+      <p>Eduskills</p>
+    </div>
+
+    <div class="card">
+      <h3>Microsoft Office Specialist (Word)</h3>
+      <p>Microsoft</p>
+    </div>
+
+    <div class="card">
+      <h3>Robotics Workshop</h3>
+      <p>Arduino & Raspberry Pi</p>
+    </div>
   </div>
 </section>
 
-<!-- ================= LIGHTBOX ================= -->
-<div class="lightbox">
-  <img />
-</div>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
   <h2>Contact</h2>
 
-  <p class="email">
-    Email:
-    <a href="mailto:kchaithanya0206@gmail.com">
-      kchaithanya0206@gmail.com
-    </a>
-  </p>
-
-  <a href="KAMALAPURAM CHAITANYA.pdf" download class="resume-btn">
-    Download Resume
-  </a>
-
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/kamalapuram-chaitanya/" target="_blank">
-      LinkedIn
-    </a>
-    <a href="https://github.com/your-github" target="_blank">
-      GitHub
-    </a>
+  <div class="contact-box">
+    <p>📧 kchaithanya0206@gmail.com</p>
+    <p>📞 +91 9177956599</p>
+    <p>📍 Kurnool, Andhra Pradesh</p>
   </div>
 </section>
 
-<script src="script.js"></script>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 Kamalapuram Chaitanya
+</footer>
+
 </body>
 </html>
