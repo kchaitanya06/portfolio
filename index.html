@@ -5,157 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kamalapuram Chaitanya | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<header class="navbar">
-  <h2 class="logo">Chaitanya</h2>
+<header>
   <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
+    <h2 class="logo">Chaitanya</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleTheme()">🌙</button>
   </nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-container">
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
-
-    <h1>Kamalapuram Chaitanya</h1>
-    <p class="hero-role">
-      Computer Science Undergraduate | Aspiring Software Engineer
-    </p>
-
-    <a href="KAMALAPURAM CHAITANYA.pdf" class="btn" target="_blank">
-  📄 View Resume
-</a>
+  <img src="Images/223T1A0565.jpeg" alt="Kamalapuram Chaitanya" class="profile-pic">
+  <h1>Kamalapuram Chaitanya</h1>
+  <p>Computer Science Undergraduate | Frontend & Full-Stack Developer</p>
+  <div class="hero-buttons">
+    <a href="KAMALAPURAM CHAITANYA.pdf" class="btn primary" target="_blank">
+      View Resume
+    </a>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section about-section">
-  <div class="about-grid">
-
-    <!-- Left -->
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        I am a <strong>Computer Science undergraduate</strong> with strong skills in
-        <strong>Java, Python, React, and Flask</strong>. I have hands-on experience in
-        <strong>full-stack development</strong> and <strong>chatbot creation</strong>.
-        I enjoy building clean, responsive web applications and aim to contribute to
-        innovative software engineering projects as a fresher.
-      </p>
-    </div>
-
-    <!-- Right -->
-    <div class="about-info">
-      <div class="info-card">🎓 B.Tech CSE<br><span>CGPA: 8.2</span></div>
-      <div class="info-card">📍 Kurnool<br><span>Andhra Pradesh</span></div>
-      <div class="info-card">🗣 Languages<br><span>English, Telugu, Hindi</span></div>
-    </div>
-
-  </div>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Computer Science undergraduate skilled in Java, Python.
+    Experienced in full-stack development and chatbot creation.
+  </p>
 </section>
 
-<!-- ===== SKILLS ===== -->
-<section id="skills" class="section">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <span class="skill">Java</span>
-    <span class="skill">Python</span>
-    <span class="skill">C</span>
-    <span class="skill">HTML</span>
-    <span class="skill">CSS</span>
-    <span class="skill">VS Code</span>
-    <span class="skill">DSA</span>
-    <span class="skill">OOPs</span>
-    <span class="skill">DBMS</span>
-    <span class="skill">Operating Systems</span>
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section">
+<!-- PROJECTS -->
+<section id="projects">
   <h2>Projects</h2>
-
   <div class="card-grid">
-    <div class="card">
-      <h3>E-Commerce Portfolio Platform</h3>
-      <p>
-        Built a responsive e-commerce application using React and Node.js for
-        dynamic product listings and improved user experience.
-      </p>
-      <div class="tags">
-        <span>React</span><span>Node.js</span>
+
+    <div class="card animate-card">
+      <div class="card-inner">
+        <h3>E-Commerce Portfolio Platform</h3>
+        <p>Built a responsive e-commerce app using React and Node.js.</p>
       </div>
     </div>
 
-    <div class="card">
-      <h3>AI Chatbot with Flask</h3>
-      <p>
-        Developed a chatbot using Flask and Python with real-time interaction
-        via AJAX and NLP-based logic.
-      </p>
-      <div class="tags">
-        <span>Python</span><span>Flask</span>
+    <div class="card animate-card">
+      <div class="card-inner">
+        <h3>AI Chatbot with Flask</h3>
+        <p>Developed an AI chatbot using Python, Flask, and AJAX.</p>
       </div>
     </div>
 
-    <div class="card">
-      <h3>Cybersecurity Workshop</h3>
-      <p>
-        Conducted a cybersecurity awareness workshop and trained 100+ students
-        on phishing and safe browsing practices.
-      </p>
-      <div class="tags">
-        <span>Cybersecurity</span>
+    <div class="card animate-card">
+      <div class="card-inner">
+        <h3>Cybersecurity Workshop</h3>
+        <p>Conducted cybersecurity awareness training for 100+ students.</p>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ===== CERTIFICATIONS ===== -->
-<section id="certifications" class="section">
+<!-- CERTIFICATIONS -->
+<section id="certifications">
   <h2>Certifications</h2>
-
   <div class="card-grid">
-    <div class="card">
-      <h3>AWS Cloud Computing</h3>
-      <p>Eduskills</p>
+
+    <div class="card animate-card">
+      <div class="card-inner">
+        <h3>AWS Cloud Computing</h3>
+        <span>Eduskills</span>
+        <p>Learned AWS compute, storage, and networking basics.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Microsoft Office Specialist (Word)</h3>
-      <p>Microsoft</p>
+
+    <div class="card animate-card">
+      <div class="card-inner">
+        <h3>Microsoft Office Specialist</h3>
+        <span>Microsoft</span>
+        <p>Certified in professional document creation using MS Word.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Robotics Workshop</h3>
-      <p>Arduino & Raspberry Pi</p>
+
+    <div class="card animate-card">
+      <div class="card-inner">
+        <h3>Robotics Workshop</h3>
+        <span>Arduino & Raspberry Pi</span>
+        <p>Hands-on embedded systems and sensor programming.</p>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
+<!-- HOBBIES -->
+<section id="hobbies">
+  <h2>Hobbies & Interests</h2>
+  <div class="hobbies">
+    <div>💻 Coding</div>
+    <div>🚀 Tech Exploration</div>
+    <div>🧩 Sudoku</div>
+    <div>💃 Dancing</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
   <h2>Contact</h2>
-
-  <div class="contact-box">
-    <p>📧 kchaithanya0206@gmail.com</p>
-    <p>📞 +91 9177956599</p>
-    <p>📍 Kurnool, Andhra Pradesh</p>
-  </div>
+  <p>Email: kchaithanya0206@gmail.com</p>
+  <p>Phone: +91 9177956599</p>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  © 2026 Kamalapuram Chaitanya
+<footer>
+  <p class="copyright">© 2026 Kamalapuram Chaitanya</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
